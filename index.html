@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="canvas-container">
+            <canvas id="mazeCanvas"></canvas>
+        </div>
+
+        <div class="controls-container">
+            <div class="controls">
+                <button onclick="movePlayer(0, -1)">🔼</button>
+                <br>
+                <button onclick="movePlayer(1, 0)">▶️</button>
+                <button onclick="movePlayer(0, 1)">🔽</button>
+                <br>
+                <button onclick="movePlayer(-1, 0)">◀️</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="winMessage">Congratulations, You Win!</div>
+    
+    <img id="winLogo" src="Sildoo.jpg" alt="Winning Logo">
+    <button id="backToLogin" class="hidden" onclick="redirectToLogin()">Back to Login</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
